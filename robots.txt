@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://tanhhhhtjy.github.io/sitemap.xml
