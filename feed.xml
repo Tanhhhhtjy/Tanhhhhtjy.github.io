@@ -3,12 +3,328 @@
     <title>tanh-blog</title>
     <link href="https://tanhhhhtjy.github.io/feed.xml" rel="self" />
     <link href="https://tanhhhhtjy.github.io" />
-    <updated>2025-09-12T00:07:57+08:00</updated>
+    <updated>2025-09-12T17:04:14+08:00</updated>
     <author>
         <name>tanh</name>
     </author>
     <id>https://tanhhhhtjy.github.io</id>
 
+    <entry>
+        <title>Android平台开发技术(1)</title>
+        <author>
+            <name>tanh</name>
+        </author>
+        <link href="https://tanhhhhtjy.github.io/androidping-tai-kai-fa-ji-shu1.html"/>
+        <id>https://tanhhhhtjy.github.io/androidping-tai-kai-fa-ji-shu1.html</id>
+
+        <updated>2025-09-12T17:04:14+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Android平台开发技术(1) 1.无线通讯技术发展 1.1 历史发展 蜂窝移动通信技术(Cellular mobile communication)诞生于20世纪70年代末期，在过去的几十年中经历了无数的进步与革新，发展迅速。 该技术的初始目标是通过高效利用有限的频谱块(a limited block&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <section id="nice" style="background-attachment: scroll; background-clip: border-box; background-color: rgba(0, 0, 0, 0); background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; font-family: Optima, PingFangSC-light, serif; font-size: 16px; color: #000000; line-height: 1.5em; word-spacing: 0em; letter-spacing: 0em; word-break: break-word; overflow-wrap: break-word; text-align: left; padding: 0px 10px 0px 10px; margin: 0px;" data-tool="mdnice编辑器" data-website="https://www.mdnice.com">
+<h1 style="align-items: unset; background-attachment: scroll; background-clip: border-box; background-color: unset; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; box-shadow: none; display: flex; flex-direction: unset; float: unset; height: auto; justify-content: center; line-height: 1.5em; overflow-x: unset; overflow-y: unset; position: relative; text-align: center; text-shadow: none; transform: none; width: auto; -webkit-box-reflect: unset; border-width: 2px 1px 1px 1px; border-color: #f83929 #000000 #000000 #000000; border-style: solid none none none; padding: 0px; margin: 30px 0px 15px 0px;" data-tool="mdnice编辑器"><span class="content" style="font-size: 20px; color: #ffffff; background-color: #f83929; line-height: 1.8em; letter-spacing: 0em; align-items: unset; background-attachment: scroll; background-clip: border-box; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 13px; border-bottom-right-radius: 13px; box-shadow: none; display: block; font-weight: normal; flex-direction: unset; float: unset; height: auto; justify-content: unset; overflow-x: unset; overflow-y: unset; position: relative; text-align: left; text-indent: 0em; text-shadow: none; transform: none; width: auto; -webkit-box-reflect: unset; padding: 3px 5px 5px 5px; margin: 0px; border: 1px none #000000;"><figure class="post__image"><img loading="lazy"  src="https://tanhhhhtjy.github.io/media/posts/7/hcf1.webp" alt="" width="2160" height="2882" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://tanhhhhtjy.github.io/media/posts/7/responsive/hcf1-xs.webp 640w ,https://tanhhhhtjy.github.io/media/posts/7/responsive/hcf1-sm.webp 768w ,https://tanhhhhtjy.github.io/media/posts/7/responsive/hcf1-md.webp 1024w ,https://tanhhhhtjy.github.io/media/posts/7/responsive/hcf1-lg.webp 1366w ,https://tanhhhhtjy.github.io/media/posts/7/responsive/hcf1-xl.webp 1600w ,https://tanhhhhtjy.github.io/media/posts/7/responsive/hcf1-2xl.webp 1920w"></figure>Android平台开发技术(1)</span></h1>
+<h2 style="align-items: unset; background-attachment: scroll; background-clip: border-box; background-color: unset; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; box-shadow: none; display: block; flex-direction: unset; float: unset; height: auto; justify-content: unset; line-height: 1.5em; overflow-x: unset; overflow-y: unset; position: relative; text-align: left; text-shadow: none; transform: none; width: auto; -webkit-box-reflect: unset; padding: 0px; margin: 30px 0px 15px 0px; border: 1px none #000000;" data-tool="mdnice编辑器"><span class="content" style="font-size: 18px; color: #222222; line-height: 1.8em; letter-spacing: 0em; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; align-items: unset; background-attachment: scroll; background-clip: border-box; background-color: unset; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; box-shadow: none; display: block; font-weight: bold; flex-direction: unset; float: unset; height: auto; justify-content: unset; overflow-x: unset; overflow-y: unset; position: relative; text-align: left; text-indent: 0em; text-shadow: none; transform: none; width: auto; -webkit-box-reflect: unset; border-width: 1px 1px 1px 5px; border-color: #000000 #000000 #000000 #f83929; border-style: none none none solid; padding: 0px 0px 0px 10px; margin: 0px;">1.无线通讯技术发展</span></h2>
+<h3 style="display: flex; padding: 0px; margin: 30px 0px 15px 0px;" data-tool="mdnice编辑器"><span class="content" style="font-size: 16px; color: #000000; line-height: 1.5em; letter-spacing: 0em; font-weight: bold; display: block;">1.1 历史发展</span></h3>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">蜂窝移动通信技术(Cellular mobile communication)诞生于20世纪70年代末期，在过去的几十年中经历了无数的进步与革新，发展迅速。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">该技术的初始目标是通过高效利用有限的频谱块(a limited block of frequency spectrum)，让相当大一部分公众能够负担得起大规模移动无线电服务。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">在实现这一目标的过程中发挥关键作用的关键因素是蜂窝(cellular)概念，其底层频率复用理念(underlying frequency reuse philosophy)为其提供了动力 。在过去的几十年中，全球使用移动通信服务的人口比例大幅增加。当今的蜂窝移动通信基础设施已经成为许多新时代行业的主要驱动力，这些行业提供了多种新服务和产品。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">蜂窝系统已经从 20 世纪 80 年代初第一代 (1G) 的语音服务驱动发展到现在第五代 (5G) 的数据服务(data services driven)驱动，并且很可能在即将到来的第六代 (6G) 及未来由人工智能(artificial intelligence) (AI) 驱动。从 20 世纪 80 年代初开始，蜂窝行业见证了大约每十年一次的新一代蜂窝标准取代其前身。按照这个数字，我们正处于 5G 标准部署和运营之中，而 6G 标准正在酝酿之中，可能在 2030 年代部署。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">在从 1G 到 5G 的演进过程中，通过多项理论进步和技术创新，蜂窝系统的能力得到了巨大提升。这些进步也改变了无线通信的教学。在代表一代向下一代演进的多项进步和创新中，物理层波形设计(physical layer waveform design)脱颖而出，成为实现跨多代大幅增强能力的关键推动因素。这些能力通常体现在实现更高的数据速率、频谱效率、能源效率、可靠性以及对不利信道特性的鲁棒性等方面（data rate, spectral efficiency, energy efficiency, reliability, and robustness to adverse channel characteristics）。</p>
+<h3 style="display: flex; padding: 0px; margin: 30px 0px 15px 0px;" data-tool="mdnice编辑器"><span class="content" style="font-size: 16px; color: #000000; line-height: 1.5em; letter-spacing: 0em; font-weight: bold; display: block;">1.2 多种复用方式</span></h3>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·频分复用(FDM，Frequency Division Multiplexing)，就是将用于传输信道的总带宽划分成若干个子频带（或称子信道），每一个子信道传输1路信号。频分复用要求总频率宽度大于各个子信道频率之和，同时为了保证各子信道中所传输的信号互不干扰，应在各子信道之间设立隔离带，这样就保证了各路信号互不干扰（条件之一）。频分复用技术的特点是所有子信道传输的信号以并行的方式工作，每一路信号传输时可不考虑传输时延，因而频分复用技术取得了非常广泛的应用。频分复用技术除传统意义上的频分复用(FDM)外，还有一种是正交频分复用(OFDM)相应的就是要保证各子频带彼此正交。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·时分复用(Time Division Multiplexing,TDM)是采用同一物理连接的不同时段来传输不同的信号，也能达到多路传输的目的。时分多路复用以时间作为信号分割的参量，故必须使各路信号在时间轴上互不重叠。时分复用（TDM，Time-division multiplexing）就是将提供给整个信道传输信息的时间划分成若干时间片(简称时隙)，并将这些时隙分配给每一个信号源使用，保证资源的利用率。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·码分复用(CDM，Code Division Multiplexing)是用一组包含互相正交的码字的码组携带多路信号。采用同一波长的扩频序列，频谱资源利用率高，与WDM结合，可以大大增加系统容量。有码分多址，频分多址(FDMA)、时分多址(TDMA)和同步码分多址(SCDMA)等相关技术。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·波分复用(WDM，Wavelength Division Multiplexing)是将两种或多种不同波长的光载波信号（携带各种信息）在发送端经复用器(亦称合波器，Multiplexer)汇合在一起，并耦合到光线路的同一根光纤中进行传输的技术；在接收端，经解复用器(亦称分波器或称去复用器，Demultiplexer)将各种波长的光载波分离，然后由光接收机作进一步处理以恢复原信号。这种在同一根光纤中同时传输两个或众多不同波长光信号的技术，称为波分复用。</p>
+<h2 style="align-items: unset; background-attachment: scroll; background-clip: border-box; background-color: unset; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; box-shadow: none; display: block; flex-direction: unset; float: unset; height: auto; justify-content: unset; line-height: 1.5em; overflow-x: unset; overflow-y: unset; position: relative; text-align: left; text-shadow: none; transform: none; width: auto; -webkit-box-reflect: unset; padding: 0px; margin: 30px 0px 15px 0px; border: 1px none #000000;" data-tool="mdnice编辑器"><span class="content" style="font-size: 18px; color: #222222; line-height: 1.8em; letter-spacing: 0em; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; align-items: unset; background-attachment: scroll; background-clip: border-box; background-color: unset; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; box-shadow: none; display: block; font-weight: bold; flex-direction: unset; float: unset; height: auto; justify-content: unset; overflow-x: unset; overflow-y: unset; position: relative; text-align: left; text-indent: 0em; text-shadow: none; transform: none; width: auto; -webkit-box-reflect: unset; border-width: 1px 1px 1px 5px; border-color: #000000 #000000 #000000 #f83929; border-style: none none none solid; padding: 0px 0px 0px 10px; margin: 0px;">2.Android与iOS</span></h2>
+<h3 style="display: flex; padding: 0px; margin: 30px 0px 15px 0px;" data-tool="mdnice编辑器"><span class="content" style="font-size: 16px; color: #000000; line-height: 1.5em; letter-spacing: 0em; font-weight: bold; display: block;">2.1墓碑机制与iOS应用程序的生命周期</span></h3>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">应用程序的状态</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">在iOS中的应用程序中一共有5种状态:</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·Not running: 应用未运行</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·Inactive: 应用运行在 foreground 但没有接收事件</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·Active: 应用运行在 foreground 且正在接收事件</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·Background: 运行在 background 且正在执行代码</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">·Suspended: 运行在 background 但没有执行代码</p>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="2" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">墓碑机制</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">墓碑机制（Tombstone）也就是常说的「伪多任务」，是手机操作系统中的一个程序运行规则。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">当上一个任务被迫中断时，如按下 Home 键至主界面的瞬间，系统会记录当下应用程序的状态，随后程序被冻结起来（完全挂起），就像把事件记录在墓碑上一样。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">当需要恢复时，根据墓碑上的内容，将程序恢复到中断之前的状态。这样的一种机制就是墓碑机制，墓碑机制常见于移动设备这种内存或电能资源有限的平台。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">在此机制之上，苹果也开放了一个后台接口，允许应用在进入后台之后继续运行10分钟，无论亮屏还是息屏休眠都是10分钟，时间一到立马挂起。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">墓碑式后台，在关闭程序时保存现场，下次启动时还原，给人一种后台的假象。</p>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="3" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">触发墓碑化</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">程序只要符合以下情况之一，就会触发墓碑化，使得程序挂起：</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">（1）iOS4.0以前的系统，APP 是基于 iOS4.0 之前系统开发的，设备不支持多任务。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">（2）在Info.plist 文件中，程序包含了 UIApplicationExitsOnSuspend 键。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">（3）系统资源不足时系统调度终止 APP。</p>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="4" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">真后台</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">与Android的后台机制不同，为了兼顾系统体验和统一进程管理，iOS仅提供了几个后台接口:</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">(1) Background Audio 后台音频</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">在播放音频时，即使应用退到后台，只要一直有音频在播放，那应用就可以一直在后台运行。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">(2) Location Services 定位服务</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">这时后台的定位服务，由系统进行统一管理。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">(3) VoIP 语音通话</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">一些类似 Skype 通话应用需要调用这个接口，实现后台的语音通话。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">(4) Newsstand 新闻推送</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">报刊杂志后台可以主动下载更新，保证其时效性。此后台运行的选项就是提供给报刊杂志类应用可以在后台下载及处理报刊杂志内容，而下载的过程需要使用 NewsstandKit 中的 NKAssetDownload 进行下载。需要注意的是，下载的过程中，应用可能还是会被挂起，甚至应用被退出，而 iOS 会在 Wi-Fi 环境下继续下载，直到下载完成。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">(5) Background Task Completion 后台任务冻结</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">这也就是 iOS4 上面允许后台保留 10 分钟的那个接口，iOS7 改为允许在开屏下运行 10 分钟，关屏会暂停，直到开屏后重启继续凑足 10 分钟，直到满10分钟后，这个后台就会被冻结。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">(6) Remote Notification 远程推送</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">iOS7 新增，由统一推送通知激活后台，以往 QQ 微信之类的聊天软件接收到推送的时候都是点进去再加载数据，而这个接口允许软件接收到推送后可以直接启动后台任务。另外还支持Silent Notification（静默推送），适合实时类强的应用，但有频率限制（每小时几次）。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">(7) Background Transfer Service 后台数据服务</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">iOS7 新增，可由应用直接激活的无时间限制后台，但是功能很明确，只限于数据的上传下载这类传输服务，且只会在 WiFi 环境下才进行传输。</p>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="5" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">系统统一推送（无后台推送）</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">说到墓碑机制就不得不说 iOS 的系统推送机制，在应用程序进入墓碑状态后，其数据仍可通过苹果搭建的推送服务器传输，并不需要应用后台运行，这是无需后台驻留的系统级推送。</p>
+<h3 style="display: flex; padding: 0px; margin: 30px 0px 15px 0px;" data-tool="mdnice编辑器"><span class="content" style="font-size: 16px; color: #000000; line-height: 1.5em; letter-spacing: 0em; font-weight: bold; display: block;">2.2 Android开发环境</span></h3>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">现代开发者通常采用Android Studio配合SDK进行开发，也可以使用IDEAL配合SDK进行开发。</p>
+<h3 style="display: flex; padding: 0px; margin: 30px 0px 15px 0px;" data-tool="mdnice编辑器"><span class="content" style="font-size: 16px; color: #000000; line-height: 1.5em; letter-spacing: 0em; font-weight: bold; display: block;">2.3 Android架构</span></h3>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">Android操作系统是一个软件组成的栈，在架构图中它大致可以分为五个部分和四个主要层。</p>
+<figure style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 0px; margin: 10px 0px 10px 0px;" data-tool="mdnice编辑器"><img loading="lazy" style="display: block; max-width: 100%; border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom-right-radius: 16px; border-bottom-left-radius: 16px; object-fit: fill; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px; border-width: 3px; border-color: rgba(0, 0, 0, 0.4); border-style: none; margin: 0px auto 0px auto;" src="https://files.mdnice.com/user/130718/41468676-6ae1-44ee-889a-3fecea8981fc.png" alt="" data-is-external-image="true"></figure>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Linux Kernel(内核)</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">在所有层的最底下是 Linux - 包括大约115个补丁的 Linux 3.6。它提供了基本的系统功能，比如进程管理，内存管理，设备管理（如摄像头，键盘，显示器）。同时，内核处理所有 Linux 所擅长的工作，如网络和大量的设备驱动，从而避免兼容大量外围硬件接口带来的不便。</p>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="2" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Libraries(程序库)</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">在 Linux 内核层的上面是一系列程序库的集合，包括开源的 Web 浏览器引擎 Webkit ，知名的 libc 库，用于仓库存储和应用数据共享的 SQLite 数据库，用于播放、录制音视频的库，用于网络安全的 SSL 库等。</p>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="3" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Android程序库</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">这个类别包括了专门为 Android 开发的基于 Java 的程序库。这个类别程序库的示例包括应用程序框架库，如用户界面构建，图形绘制和数据库访问。一些 Android 开发者可用的 Android 核心程序库总结如下:</p>
+<ul style="list-style-type: disc; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.app - 提供应用程序模型的访问，是所有 Android 应用程序的基石。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.content - 方便应用程序之间，应用程序组件之间的内容访问，发布，消息传递。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.database - 用于访问内容提供者发布的数据，包含 SQLite 数据库管理类。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.opengl - OpenGL ES 3D 图片渲染 API 的 Java 接口。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.os - 提供应用程序访问标注操作系统服务的能力，包括消息，系统服务和进程间通信。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.text - 在设备显示上渲染和操作文本。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.view - 应用程序用户界面的基础构建块。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.widget - 丰富的预置用户界面组件集合，包括按钮，标签，列表，布局管理，单选按钮等。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">android.webkit - 一系列类的集合，允许为应用程序提供内建的 Web 浏览能力。</p>
+</section>
+</li>
+</ul>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="4" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Android Runtime(安卓运行时)</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">这是架构中的第三部分，自下而上的第二层。这个部分提供名为 Dalvik 虚拟机的关键组件，类似于 Java 虚拟机，但专门为 Android 设计和优化。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">Dalvik 虚拟机使得可以在 Java 中使用 Linux 核心功能，如内存管理和多线程。Dalvik 虚拟机使得每一个 Android 应用程序运行在自己独立的虚拟机进程。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">Android 运行时同时提供一系列核心的库来为 Android 应用程序开发者使用标准的 Java 语言来编写 Android 应用程序。</p>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="5" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Application FrameWork(应用框架)</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">应用框架层以 Java 类的形式为应用程序提供许多高级的服务。应用程序开发者被允许在应用中使用这些服务。</p>
+<ul style="list-style-type: disc; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">活动管理者 - 控制应用程序生命周期和活动栈的所有方面。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">内容提供者 - 允许应用程序之间发布和分享数据。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">资源管理器 - 提供对非代码嵌入资源的访问，如字符串，颜色设置和用户界面布局。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">通知管理器 - 允许应用程序显示对话框或者通知给用户。</p>
+</section>
+</li>
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;">视图系统 - 一个可扩展的视图集合，用于创建应用程序用户界面。</p>
+</section>
+</li>
+</ul>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="6" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Applications(应用程序)</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">顶层中有所有的 Android 应用程序。你写的应用程序也将被安装在这层。这些应用程序包括通讯录，浏览器，游戏等。</p>
+<h3 style="display: flex; padding: 0px; margin: 30px 0px 15px 0px;" data-tool="mdnice编辑器"><span class="content" style="font-size: 16px; color: #000000; line-height: 1.5em; letter-spacing: 0em; font-weight: bold; display: block;">2.4 Android应用程序组件</span></h3>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">应用程序组件是一个Android应用程序的基本构建块。这些组件由应用清单文件松耦合的组织。AndroidManifest.xml描述了应用程序的每个组件，以及他们如何交互。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">以下是AndroidManifest.xml的一个示例代码</p>
+<pre class="custom" style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px; text-align: left; padding: 0px; margin: 10px 0px 10px 0px;" data-tool="mdnice编辑器"><code class="hljs" style="overflow-x: auto; padding: 16px; color: #333; padding-top: 15px; background: #f8f8f8; border-radius: 5px; display: -webkit-box; font-family: Consolas, Monaco, Menlo, monospace; font-size: 12px;">&lt;?xml version=<span class="hljs-string" style="color: #d14; line-height: 26px;">"1.0"</span> encoding=<span class="hljs-string" style="color: #d14; line-height: 26px;">"utf-8"</span>?&gt;<br>&lt;manifest xmlns:android=<span class="hljs-string" style="color: #d14; line-height: 26px;">"http://schemas.android.com/apk/res/android"</span>&gt;<br><br>    &lt;uses-feature android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"android.hardware.type.watch"</span>/&gt;<br><br>    &lt;uses-permission android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"android.permission.WAKE_LOCK"</span>/&gt;<br><br>    &lt;application<br>            android:allowBackup=<span class="hljs-string" style="color: #d14; line-height: 26px;">"true"</span><br>            android:icon=<span class="hljs-string" style="color: #d14; line-height: 26px;">"@mipmap/ic_launcher"</span><br>            android:label=<span class="hljs-string" style="color: #d14; line-height: 26px;">"@string/app_name"</span><br>            android:supportsRtl=<span class="hljs-string" style="color: #d14; line-height: 26px;">"true"</span><br>            android:theme=<span class="hljs-string" style="color: #d14; line-height: 26px;">"@android:style/Theme.DeviceDefault"</span>&gt;<br>        &lt;service<br>                android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">".complication.MainComplicationService"</span><br>                android:exported=<span class="hljs-string" style="color: #d14; line-height: 26px;">"true"</span><br>                android:label=<span class="hljs-string" style="color: #d14; line-height: 26px;">"@string/complication_label"</span><br>                android:permission=<span class="hljs-string" style="color: #d14; line-height: 26px;">"com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER"</span>&gt;<br>            &lt;intent-filter&gt;<br>                &lt;action android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST"</span>/&gt;<br>            &lt;/intent-filter&gt;<br><br>            &lt;meta-data<br>                    android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"android.support.wearable.complications.SUPPORTED_TYPES"</span><br>                    android:value=<span class="hljs-string" style="color: #d14; line-height: 26px;">"SHORT_TEXT"</span>/&gt;<br>            &lt;meta-data<br>                    android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"android.support.wearable.complications.UPDATE_PERIOD_SECONDS"</span><br>                    android:value=<span class="hljs-string" style="color: #d14; line-height: 26px;">"0"</span>/&gt;<br>        &lt;/service&gt;<br>        &lt;service<br>                android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">".tile.MainTileService"</span><br>                android:exported=<span class="hljs-string" style="color: #d14; line-height: 26px;">"true"</span><br>                android:label=<span class="hljs-string" style="color: #d14; line-height: 26px;">"@string/tile_label"</span><br>                android:permission=<span class="hljs-string" style="color: #d14; line-height: 26px;">"com.google.android.wearable.permission.BIND_TILE_PROVIDER"</span>&gt;<br>            &lt;intent-filter&gt;<br>                &lt;action android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"androidx.wear.tiles.action.BIND_TILE_PROVIDER"</span>/&gt;<br>            &lt;/intent-filter&gt;<br><br>            &lt;meta-data<br>                    android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"androidx.wear.tiles.PREVIEW"</span><br>                    android:resource=<span class="hljs-string" style="color: #d14; line-height: 26px;">"@drawable/tile_preview"</span>/&gt;<br>        &lt;/service&gt;<br><br>        &lt;uses-library<br>                android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"com.google.android.wearable"</span><br>                android:required=<span class="hljs-string" style="color: #d14; line-height: 26px;">"true"</span>/&gt;<br>        &lt;!--<br>               Set to <span class="hljs-literal" style="color: #008080; line-height: 26px;">true</span> <span class="hljs-keyword" style="color: #333; font-weight: bold; line-height: 26px;">if</span> your app is Standalone, that is, it does not require the handheld<br>               app to run.<br>        --&gt;<br>        &lt;meta-data<br>                android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"com.google.android.wearable.standalone"</span><br>                android:value=<span class="hljs-string" style="color: #d14; line-height: 26px;">"true"</span>/&gt;<br><br>        &lt;activity<br>                android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">".presentation.MainActivity"</span><br>                android:exported=<span class="hljs-string" style="color: #d14; line-height: 26px;">"true"</span><br>                android:taskAffinity=<span class="hljs-string" style="color: #d14; line-height: 26px;">""</span><br>                android:theme=<span class="hljs-string" style="color: #d14; line-height: 26px;">"@style/MainActivityTheme.Starting"</span>&gt;<br>            &lt;intent-filter&gt;<br>                &lt;action android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"android.intent.action.MAIN"</span>/&gt;<br><br>                &lt;category android:name=<span class="hljs-string" style="color: #d14; line-height: 26px;">"android.intent.category.LAUNCHER"</span>/&gt;<br>            &lt;/intent-filter&gt;<br>        &lt;/activity&gt;<br>    &lt;/application&gt;<br><br>&lt;/manifest&gt;<br></code></pre>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">以下是可以在Android应用程序中使用的四个主要组件:</p>
+<section class="table-container" style="overflow-x: auto; padding: 0px; margin: 0px;" data-tool="mdnice编辑器">
+<table style="display: table; text-align: left;">
+<thead>
+<tr>
+<th style="color: #353535; font-size: 16px; line-height: 1.5em; letter-spacing: 0.04em; text-align: left; font-weight: bold; background-attachment: scroll; background-clip: border-box; background-color: #dbd9d8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; min-width: 85px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">组件</th>
+<th style="color: #353535; font-size: 16px; line-height: 1.5em; letter-spacing: 0.04em; text-align: left; font-weight: bold; background-attachment: scroll; background-clip: border-box; background-color: #dbd9d8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; min-width: 85px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">描述</th>
+</tr>
+</thead>
+<tbody style="font-size: 16px; line-height: 1.5em; letter-spacing: 0.04em; text-align: left; font-weight: normal; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; border: 0px initial initial;">
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #ffffff; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Activities</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">描述UI，处理用户与机器屏幕的交互。</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #f8f8f8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Services</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">处理与应用程序关联的后台操作。</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #ffffff; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Broadcast Receivers</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">处理Android操作系统和应用程序之间的通信。</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #f8f8f8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Content Providers</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">处理数据和数据库管理方面的问题。</td>
+</tr>
+</tbody>
+</table>
+</section>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Activities</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">一个活动标识一个具有用户界面的单一屏幕。举个例子，一个邮件应用程序可以包含一个活动用于显示新邮件列表，另一个活动用来编写邮件，再一个活动来阅读邮件。当应用程序拥有多于一个活动，其中的一个会被标记为当应用程序启动的时候显示。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">一个活动是Activity类的一个子类，如下所示：</p>
+<pre class="custom" style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px; text-align: left; padding: 0px; margin: 10px 0px 10px 0px;" data-tool="mdnice编辑器"><code class="hljs" style="overflow-x: auto; padding: 16px; color: #333; padding-top: 15px; background: #f8f8f8; border-radius: 5px; display: -webkit-box; font-family: Consolas, Monaco, Menlo, monospace; font-size: 12px;">public class MainActivity extends Activity {<br><br>}<br></code></pre>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="2" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Services</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">服务是运行在后台，执行长时间操作的组件。举个例子，服务可以是用户在使用不同的程序时在后台播放音乐，或者在活动中通过网络获取数据但不阻塞用户交互。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">一个服务是Service类的子类，如下所示：</p>
+<pre class="custom" style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px; text-align: left; padding: 0px; margin: 10px 0px 10px 0px;" data-tool="mdnice编辑器"><code class="hljs" style="overflow-x: auto; padding: 16px; color: #333; padding-top: 15px; background: #f8f8f8; border-radius: 5px; display: -webkit-box; font-family: Consolas, Monaco, Menlo, monospace; font-size: 12px;">public class MyService extends Service {<br><br>}<br></code></pre>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="3" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Broadcast Receivers</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">广播接收器简单地响应从其他应用程序或者系统发来的广播消息。举个例子，应用程序可以发起广播来让其他应用程序知道一些数据已经被下载到设备，并且可以供他们使用。因此广播接收器会拦截这些通信并采取适当的行动。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">广播接收器是BroadcastReceiver类的一个子类，每个消息以Intent对象的形式来广播。</p>
+<pre class="custom" style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px; text-align: left; padding: 0px; margin: 10px 0px 10px 0px;" data-tool="mdnice编辑器"><code class="hljs" style="overflow-x: auto; padding: 16px; color: #333; padding-top: 15px; background: #f8f8f8; border-radius: 5px; display: -webkit-box; font-family: Consolas, Monaco, Menlo, monospace; font-size: 12px;">public class MyReceiver  extends  BroadcastReceiver {<br><br>}<br><br></code></pre>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="4" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">Content Providers</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">内容提供者组件通过请求从一个应用程序到另一个应用程序提供数据。这些请求由ContentResolver类的方法来处理。这些数据可以是存储在文件系统、数据库或者其他其他地方。</p>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">内容提供者是ContentProvider类的子类，并实现一套标准的API，以便其他应用程序来执行事务。</p>
+<pre class="custom" style="border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px; text-align: left; padding: 0px; margin: 10px 0px 10px 0px;" data-tool="mdnice编辑器"><code class="hljs" style="overflow-x: auto; padding: 16px; color: #333; padding-top: 15px; background: #f8f8f8; border-radius: 5px; display: -webkit-box; font-family: Consolas, Monaco, Menlo, monospace; font-size: 12px;">public class MyContentProvider extends  ContentProvider {<br><br>}<br></code></pre>
+<ol style="list-style-type: decimal; color: #000000; padding: 0px 0px 0px 25px; margin: 8px 0px 8px 0px;" start="5" data-tool="mdnice编辑器">
+<li>
+<section style="margin-top: 5px; margin-bottom: 5px; color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; font-weight: normal;">附件组件</section>
+</li>
+</ol>
+<p style="color: #353535; font-size: 16px; line-height: 1.8em; letter-spacing: 0.04em; text-align: left; text-indent: 0em; padding: 8px 0px 8px 0px; margin: 0px;" data-tool="mdnice编辑器">有一些附件的组件用于以上提到的实体、他们之间逻辑、及他们之间连线的构造。这些组件如下：</p>
+<section class="table-container" style="overflow-x: auto; padding: 0px; margin: 0px;" data-tool="mdnice编辑器">
+<table style="display: table; text-align: left;">
+<thead>
+<tr>
+<th style="color: #353535; font-size: 16px; line-height: 1.5em; letter-spacing: 0.04em; text-align: left; font-weight: bold; background-attachment: scroll; background-clip: border-box; background-color: #dbd9d8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; min-width: 85px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">组件</th>
+<th style="color: #353535; font-size: 16px; line-height: 1.5em; letter-spacing: 0.04em; text-align: left; font-weight: bold; background-attachment: scroll; background-clip: border-box; background-color: #dbd9d8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; min-width: 85px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">描述</th>
+</tr>
+</thead>
+<tbody style="font-size: 16px; line-height: 1.5em; letter-spacing: 0.04em; text-align: left; font-weight: normal; border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; border: 0px initial initial;">
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #ffffff; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Fragments</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">代表活动中的一个行为或者一部分用户界面</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #f8f8f8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Views</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">绘制在屏幕上的UI元素，包括按钮，列表</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #ffffff; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Layouts</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">控制屏幕格式，展示视图外观的View的继承</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #f8f8f8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Intents</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">组件间的消息连线</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #ffffff; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Resources</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">外部元素，例如字符串资源、常量资源及图片资源。</td>
+</tr>
+<tr style="color: #353535; background-attachment: scroll; background-clip: border-box; background-color: #f8f8f8; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: no-repeat; background-size: auto; width: auto; height: auto;">
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">Manifest</td>
+<td style="min-width: 85px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 1px; border-color: rgba(204, 204, 204, 0.4); border-style: solid; padding: 5px 10px 5px 10px;">应用程序的配置文件</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>算法设计与分析(1)</title>
         <author>
