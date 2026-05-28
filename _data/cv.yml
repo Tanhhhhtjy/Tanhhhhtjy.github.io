@@ -1,0 +1,41 @@
+cv:
+  name: Jinyu Tian
+  label: CS Undergraduate · Beihang University
+  email: tianjinyu@buaa.edu.cn
+  location: Beijing, China
+  image: ""
+  summary: Third-year CS undergraduate at Beihang University. Research interests span large language models, multimodal reasoning, and spatial intelligence.
+
+  social_networks:
+    - network: GitHub
+      username: Tanhhhhtjy
+
+  sections:
+    Education:
+      - institution: Beihang University (BUAA)
+        location: Beijing, China
+        url: https://www.buaa.edu.cn/
+        area: Computer Science and Engineering
+        studyType: B.Eng. (in progress)
+        start_date: 2023
+        end_date: 2027
+        score: ""
+        courses: "Algorithms, Operating Systems, Compilers, Machine Learning, Computer Vision"
+        highlights:
+          - Third-year undergraduate at the School of Computer Science and Engineering.
+          - Focus on LLM agents, multimodal learning, and spatial reasoning.
+
+    Research Interests:
+      - title: Large Language Model Agents
+        description: Agentic reasoning, planning, and self-improvement for complex tasks.
+      - title: Multimodal Learning
+        description: Vision–language models and grounded multimodal understanding.
+      - title: Spatial Intelligence
+        description: Embodied and geographically grounded reasoning in LLMs.
+
+    Publications:
+      - title: "Solvita: Enhancing LLMs for Competitive Programming via Agentic Evolution"
+        authors: Han Li, **Jinyu Tian**, Rili Feng, et al.
+        venue: arXiv preprint
+        year: 2026
+        url: https://arxiv.org/abs/2605.15301
